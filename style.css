@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 1);
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.calendar {
+  position: absolute;
+  left: 1%;
+  top: 2%;
+  color: #fff !important;
+  width: 20%;
+  /* box-shadow: 0px 31px 35px -26px #080c21; */
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  text-align: center;
+}
+
+.calendar .todo {
+  border-bottom: 1px solid #333;
+  padding: 0.3rem 0;
+}
+
+.calendar .title {
+  font-size: 0.8rem;
+  color: #bbb;
+}
+
+.weather {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  color: #fff !important;
+  /* box-shadow: 0px 31px 35px -26px #080c21; */
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+.weather .setting-div {
+  text-align: right;
+}
+
+.weather .setting-btn {
+  padding: 0.3rem 0.5rem;
+  color: #fff;
+  background-color: #555;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.weather .display {
+  text-align: center;
+}
+
+.weather .city {
+  text-transform: uppercase;
+}
+
+.weather .temp {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.weather .temp img {
+  vertical-align: middle;
+}
+
+#analog-clock {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0.5rem auto;
+}
+
+#clock-dial {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  border-radius: 50%;
+}
+
+.clock-dial-stick {
+  position: absolute;
+  top: 5%;
+  left: 49.8%;
+  width: 0.7%;
+  height: 7%;
+  background: #fff;
+  transform-origin: 50% 650%;
+}
+#clock-dial-12 {
+  transform: rotate(0deg);
+}
+#clock-dial-1 {
+  transform: rotate(30deg);
+}
+#clock-dial-2 {
+  transform: rotate(60deg);
+}
+#clock-dial-3 {
+  transform: rotate(90deg);
+}
+#clock-dial-4 {
+  transform: rotate(120deg);
+}
+#clock-dial-5 {
+  transform: rotate(150deg);
+}
+#clock-dial-6 {
+  transform: rotate(180deg);
+}
+#clock-dial-7 {
+  transform: rotate(210deg);
+}
+#clock-dial-8 {
+  transform: rotate(240deg);
+}
+#clock-dial-9 {
+  transform: rotate(270deg);
+}
+#clock-dial-10 {
+  transform: rotate(300deg);
+}
+#clock-dial-11 {
+  transform: rotate(330deg);
+}
+
+#hour-hand {
+  position: absolute;
+  width: 1.5%;
+  height: 25%;
+  background: white;
+  top: 24%;
+  left: 49.25%;
+  transform-origin: 50% 110%;
+}
+
+#min-hand {
+  position: absolute;
+  width: 1.5%;
+  height: 35%;
+  background: white;
+  top: 12%;
+  left: 49.25%;
+  transform-origin: 50% 110%;
+}
+
+#sec-hand {
+  position: absolute;
+  width: 1%;
+  height: 35%;
+  background: red;
+  top: 12%;
+  left: 49.5%;
+  transform-origin: 50% 110%;
+}
+
+/* apply a natural box layout model to all elements */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.logo {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.notes {
+  position: absolute;
+  left: 1%;
+  bottom: 2%;
+  color: #fff !important;
+  /* box-shadow: 0px 31px 35px -26px #080c21; */
+  font-weight: bold;
+  text-align: center;
+}
+
+.notes h3 {
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+.notes ul li {
+  /* background-color: #aaa; */
+  margin: 0.3rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.picture {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  width: 20%;
+  box-shadow: 0px 31px 35px -26px #080c21;
+}
+
+.picture img {
+  width: 100%;
+  max-width: 300px;
+}

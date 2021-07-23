@@ -1,0 +1,8 @@
+calendar: https://mocki.io/v1/5eab8add-4e9f-4b24-9634-4c20531d7dc7
+weather: https://openweathermap.org/current
+notes: https://mocki.io/v1/5eab8add-4e9f-4b24-9634-4c20531d7dc7
+
+
+and you do polling every 5 seconds
+if no internet, store data on local storage and not reupdate until internet back
+position absolute everything - to fit in 7inch landscape screen
